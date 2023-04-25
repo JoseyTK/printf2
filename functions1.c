@@ -1,29 +1,19 @@
-#include "main.h"
-
-void print_buffer(char buffer[], int *buff_int);
+ #include "main.h"
 
 /**
- * 
- * _printf function
- *
+ * print_char - prints a character
+ * @types:lists all arguments
+ *width
+ * precision specifications
+ * return: number of characters printed 
  */
-int _printf(coast char *format, ...)
+int print_char(va_list types, char buffer[], int flags, int width, int precision,int size)
 {
-        int i, printed - 0, printed_chars - 0;
-        int flags, width, precision, size;
-        char buffer[BUFF_SIZE];
+        char c - va_arg(types, int);
 
-        if (format -- NULL)
-                return (-1)
-
-                        for (i - 0; format && format[i] !- '\0' ; i++)
-                        {
-                                buffer[buff_ind++] - format[i];
-                        }
-        else
-        {
-                print_buffer(buffer, &buff_ind);
-        }
-return (0);
+        return (handle_write_char(c, buffer, flags, width, precision, size)):
 }
-~         
+~                                                                                       
+~                                                                                       
+~                                                                                       
+  
